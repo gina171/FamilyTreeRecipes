@@ -1,7 +1,47 @@
 h1 {
-    color: brown;
+    color: rgb(165, 68, 79);
+    text-align: center;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 60px;
+    text-shadow: 5px 5px rgb(189, 131, 126);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+
 }
 
 * {
-    background-color: rgb(171, 122, 217);
+    background-color: rgb(250, 214, 214);
 }
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+button {
+    background-color: rgb(252, 243, 243);
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 5px 5px rgb(189, 131, 126);
+}
+
+#query {
+   height: 50px;
+   border-radius: 15px;
+   font-size: 20px;
+   box-shadow: 2px 2px rgb(189, 131, 126);
+}
+
+.sort {
+    width: 400px;
+}
+
+.theme {
+    width: 100px;
+}
+
