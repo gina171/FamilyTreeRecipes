@@ -12,6 +12,8 @@ h1 {
 
 * {
     background-color: rgb(250, 214, 214);
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+
 }
 
 .header {
@@ -19,6 +21,7 @@ h1 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    border-bottom: solid black 1px;
 
 }
 
@@ -34,7 +37,7 @@ button {
    height: 50px;
    border-radius: 15px;
    font-size: 20px;
-   box-shadow: 2px 2px rgb(189, 131, 126);
+   box-shadow: 5px 5px rgb(189, 131, 126);
 }
 
 .sort {
