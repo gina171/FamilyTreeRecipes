@@ -13,7 +13,9 @@ h1 {
 * {
     background-color: rgb(250, 214, 214);
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .header {
@@ -21,7 +23,9 @@ h1 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    border-bottom: solid black 1px;
+    border-bottom: solid #000000 1px;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 0;
 
 }
 
@@ -38,13 +42,69 @@ button {
    border-radius: 15px;
    font-size: 20px;
    box-shadow: 5px 5px rgb(189, 131, 126);
+   margin-right: 7px;
 }
 
 .sort {
     width: 400px;
+    flex-shrink: 1;
+    
 }
+
 
 .theme {
     width: 100px;
+    background:linear-gradient(150deg, rgb(252, 243, 243) 70%, rgb(201, 245, 185) 70%);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    height: 100vh;
+    display:grid;
+    align-items: center;
+    
+}
+
+.tree {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.tree li {
+    display: inline-table;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    transition: .5s;
+}
+
+.tree li:before, .tree li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 51%;
+    height:10px;
+
+}
+
+.tree li:after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid rgb(0, 0, 0);
 }
 
