@@ -43,6 +43,7 @@ button {
    font-size: 20px;
    box-shadow: 5px 5px rgb(189, 131, 126);
    margin-right: 7px;
+   padding-left: 3px;
 }
 
 .sort {
@@ -60,6 +61,10 @@ button {
 img {
     width: 100px;
     height: 100px;
+}
+
+.searchy {
+    padding: 0px 5px 0px 5px;
 }
 
 /* TREE PART */
@@ -103,7 +108,7 @@ img {
     right: 50%;
     border-top: 1px solid rgb(0, 0, 0);
     width: 51%;
-    height:10px;
+    height:30px;
 
 }
 
@@ -114,7 +119,14 @@ img {
 }
 
 .tree li:only-child:after, .tree li:only-child:before {
-    display:none;
+    content: '';
+    position: absolute;
+    top: -31px;
+    right: 49.5%;
+    border-top: 1px solid rgb(0, 0, 0);
+    height: 31px;
+    width:1px;
+   
 }
 
 .tree li:only-child {
@@ -128,6 +140,7 @@ img {
 .tree li:last-child:before {
     border-right:1px solid black;
     border-radius: 0px 5px 0px 0px;
+
 }
 
 .tree li:first-child:after {
@@ -153,6 +166,7 @@ img {
     text-decoration-line: none;
     border-radius: 5px;
     transition: .5s;
+    background-color: rgb(108, 40, 48);
 
 }
 
@@ -162,14 +176,14 @@ img {
     margin-bottom: 10px !important;
     border-radius: 100px;
     margin: auto;
-    background-color: rgb(252, 243, 243);
+    background-color: rgb(169, 78, 78);
 
 }
 
 .tree a span {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    color: #666;
+    color: rgb(71, 2, 2);
     padding: 8px;
     font-size: 12px;
     text-transform: uppercase;
@@ -179,7 +193,43 @@ img {
 
 }
 
-alt {
-    background-color: rgb(252, 243, 243);
+.kid {
+    margin-top: 30px;
 
 }
+
+li.grandparent::after, li.grandparent::before {
+    top: 150px;
+    border-top: 0 none;
+    margin-top: 42px;
+}
+
+
+li.grandparent::before {
+    content: '';
+    position: absolute;
+    top: 180;
+    right: 50%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 51%;
+    height: 31px;
+    border-top: 0 none;
+
+}
+
+li.grandparent.f::after {
+    content: '';
+    position: absolute;
+    top: 151px;
+    right: 50%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 51%;
+    height: 30px;
+    border-radius: 0px;
+}
+
+li.grandparent.m::after {
+    top: 152px;
+
+}
+
