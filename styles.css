@@ -29,12 +29,14 @@ h1 {
 
 }
 
-button {
+.head {
     background-color: rgb(252, 243, 243);
     height: 50px;
     border-radius: 15px;
     font-size: 20px;
     box-shadow: 5px 5px rgb(189, 131, 126);
+    color: black;
+    text-transform: none;
 }
 
 #query {
@@ -64,7 +66,7 @@ img {
 }
 
 .searchy {
-    padding: 0px 5px 0px 5px;
+    padding: 0px 7px 0px 7px;
 }
 
 /* TREE PART */
@@ -180,7 +182,7 @@ img {
 
 }
 
-.tree a span {
+button {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     color: rgb(71, 2, 2);
@@ -188,8 +190,10 @@ img {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 500;
     background-color: rgb(252, 243, 243);
+    box-shadow: none;
+    box-sizing: border-box;
+
 
 }
 
