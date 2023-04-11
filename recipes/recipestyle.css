@@ -1,3 +1,17 @@
 * {
-    background-color: blue;
+    background-color: rgb(250, 214, 214);
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+
+}
+
+img {
+    height: 400px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
