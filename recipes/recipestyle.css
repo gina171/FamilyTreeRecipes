@@ -5,13 +5,74 @@
 
 }
 
-img {
-    height: 400px;
+h1 {
+    color: rgb(165, 68, 79);
+    text-align: center;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 60px;
+    text-shadow: 5px 5px rgb(189, 131, 126);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
 }
 
-body {
+img {
+    height: 700px;
+    border-radius: 20px;
+    border: 2px solid rgb(176, 82, 82);
+}
+
+.container {
+
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
+}
+
+.text, .ingredients, .for {
+    border: 2px solid rgb(176, 82, 82);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    background:linear-gradient(to bottom left,  rgb(250, 208, 208) 40%, rgb(176, 82, 82) 99%);
+    box-shadow: 5px 5px rgb(189, 131, 126);
+
+}
+
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 500px;
+    height: 700px;
+    box-sizing: border-box;
+    flex-basis: 500px;
+}
+
+.text {
+    width: 600px;
+    padding: 50px;
+    margin: 30px;
+    height: 700px;
+    box-sizing: border-box;
+    width: 600px;
+    flex-basis: 600px;
+}
+
+.ingredients, .for {
+    width: 450px;
+}
+
+p, h2, ul, li, em {
+    background-color: transparent;
+}
+
+.placinte {
+    transform: rotate(90deg);
+    width: 700px;
+    height: auto;
 }
