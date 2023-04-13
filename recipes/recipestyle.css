@@ -1,12 +1,12 @@
 * {
-    background-color: rgb(250, 214, 214);
+    background-color: rgb(185, 200, 249);
     font-size: 25px;
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 
 }
 
 h1 {
-    color: rgb(165, 68, 79);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 60px;
@@ -19,7 +19,7 @@ h1 {
 img {
     height: 700px;
     border-radius: 20px;
-    border: 2px solid rgb(176, 82, 82);
+    border: 2px solid rgb(140, 168, 239);
     flex-shrink: 1;
     margin: 20px;
     
@@ -36,10 +36,10 @@ img {
 }
 
 .text, .ingredients, .for {
-    border: 2px solid rgb(176, 82, 82);
+    border: 2px solid rgb(251, 171, 164);
     border-radius: 20px;
     padding: 20px;
-    background:linear-gradient(to bottom left,  rgb(250, 208, 208) 40%, rgb(176, 82, 82) 99%);
+    background:linear-gradient(to bottom left,  rgb(249, 223, 223) 40%, rgb(251, 171, 164) 99%);
     box-shadow: 5px 5px rgb(189, 131, 126);
 
 }
