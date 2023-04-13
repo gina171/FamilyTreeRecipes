@@ -1,9 +1,9 @@
 h1 {
-    color: rgb(165, 68, 79);
+    color: var(--h1color);
     text-align: center;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 60px;
-    text-shadow: 5px 5px rgb(189, 131, 126);
+    text-shadow: var(--shadow);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 
@@ -11,11 +11,15 @@ h1 {
 }
 
 * {
-    background-color: rgb(250, 214, 214);
+    background-color: var(--background);
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    height:950px;
 }
 
 .header {
@@ -30,11 +34,11 @@ h1 {
 }
 
 .head {
-    background-color: rgb(252, 243, 243);
+    background-color: var(--button-background);
     height: 50px;
     border-radius: 15px;
     font-size: 20px;
-    box-shadow: 5px 5px rgb(189, 131, 126);
+    box-shadow: var(--shadow);
     color: black;
     text-transform: none;
 }
@@ -43,7 +47,7 @@ h1 {
    height: 50px;
    border-radius: 15px;
    font-size: 20px;
-   box-shadow: 5px 5px rgb(189, 131, 126);
+   box-shadow: var(--shadow);
    margin-right: 7px;
    padding-left: 3px;
 }
@@ -57,7 +61,7 @@ h1 {
 
 .theme {
     width: 100px;
-    background:linear-gradient(150deg, rgb(252, 243, 243) 70%, rgb(201, 245, 185) 70%);
+    background:var(--theme-button);
 }
 
 img {
@@ -168,7 +172,7 @@ img {
     text-decoration-line: none;
     border-radius: 5px;
     transition: .5s;
-    background-color:rgb(118, 54, 62);
+    background-color: var(--tree-color);
 
 }
 
@@ -178,19 +182,19 @@ img {
     margin-bottom: 10px !important;
     border-radius: 100px;
     margin: auto;
-    background-color: rgb(64, 25, 25);
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
 }
 
 button {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    color: rgb(71, 2, 2);
+    color: var(--tree-text);
     padding: 8px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: rgb(252, 243, 243);
+    background-color: var(--button-background);
     box-shadow: none;
     box-sizing: border-box;
 
@@ -239,7 +243,26 @@ li.grandparent.m::after {
 
 /* theme */
 
-.dark-mode {
-    background-color: black;
-    color: white;
+:root {
+
+--h1color: rgb(165, 68, 79);
+--shadow: 5px 5px rgb(189, 131, 126);
+--background: rgb(251, 204, 204);
+--button-background: rgb(248, 221, 221);
+--tree-text: rgb(71, 2, 2);
+--tree-color: rgb(118, 54, 62);
+--theme-button: linear-gradient(150deg, rgb(248, 221, 221) 70%, rgb(210, 217, 248 ) 70%);
+
+}
+
+.darkmode {
+
+--h1color: rgb(68, 86, 165);
+--shadow: 5px 5px rgb(126, 142, 189);
+--background: rgb(166, 183, 245);
+--button-background: rgb(210, 217, 248);
+--tree-text: rgb(2, 16, 71);
+--tree-color: rgb(54, 60, 118);
+--theme-button: linear-gradient(150deg,rgb(210, 217, 248) 70%,  rgb(248, 221, 221) 70%);
+
 }
